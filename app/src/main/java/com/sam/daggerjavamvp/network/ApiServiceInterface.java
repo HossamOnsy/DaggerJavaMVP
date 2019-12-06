@@ -8,7 +8,7 @@ import io.reactivex.Observable;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface APIInterface {
+public interface ApiServiceInterface {
 
     @GET("images/search")
     Observable<List<Cat>> getCats(@Query("limit") int limit);

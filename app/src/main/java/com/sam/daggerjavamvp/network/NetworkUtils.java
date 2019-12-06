@@ -21,14 +21,14 @@ public class NetworkUtils {
 
     // this method creates CatApi Object which allows us to connect with apis and get our data from server as JSON
     // GsonConverterFactory is what will parse this JSON into our Cat Object
-    public static APIInterface createWebService() {
+    public static ApiServiceInterface createWebService() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(CAT_API_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(createHttpClient())
                 .build();
-        return retrofit.create(APIInterface.class);
+        return retrofit.create(ApiServiceInterface.class);
     }
 
 

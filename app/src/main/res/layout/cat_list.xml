@@ -19,7 +19,7 @@
             >
 
                 <ImageView
-                    android:id="@+id/image1"
+                    android:id="@+id/ivCat"
                     android:textSize="18sp"
                     android:padding="6dp"
                     android:scaleType="fitXY"
