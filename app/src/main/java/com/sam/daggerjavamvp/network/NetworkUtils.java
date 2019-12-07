@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NetworkUtils {
 
-    private static final String CAT_API_BASE_URL = "https://api.thecatapi.com/v1/";
+    public static final String CAT_API_BASE_URL = "https://api.thecatapi.com/v1/";
 
     // OkHttpClient allows us to Log using OkHttp and see what happens in our requests and how we send and retreive in the network layer
 

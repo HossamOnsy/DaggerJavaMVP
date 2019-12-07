@@ -10,7 +10,6 @@ public interface MainActivityContract {
 
         void showError(String message);
 
-
         void showProgress();
 
         void hideProgress();

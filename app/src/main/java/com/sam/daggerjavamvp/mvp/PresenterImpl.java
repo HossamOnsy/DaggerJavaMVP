@@ -6,20 +6,25 @@ import com.sam.daggerjavamvp.network.ApiServiceInterface;
 import java.util.List;
 
 
+import javax.inject.Inject;
+
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.sam.daggerjavamvp.network.NetworkUtils.createWebService;
 
 public class PresenterImpl implements MainActivityContract.Presenter {
 
-    ApiServiceInterface apiServiceInterface = createWebService();
+
+    ApiServiceInterface apiServiceInterface ;
+
     MainActivityContract.View mView;
 
-    public PresenterImpl(MainActivityContract.View mView) {
+    @Inject
+    public PresenterImpl(ApiServiceInterface apiServiceInterface ,MainActivityContract.View mView) {
         this.mView = mView;
+        this.apiServiceInterface = apiServiceInterface;
     }
 
     @Override
