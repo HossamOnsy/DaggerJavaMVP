@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 
 import com.sam.daggerjavamvp.di.components.ApplicationComponent;
-import com.sam.daggerjavamvp.di.DaggerApplicationComponent;
+import com.sam.daggerjavamvp.di.components.DaggerApplicationComponent;
 
 public class MyApplication extends Application {
     public static ApplicationComponent applicationComponent;

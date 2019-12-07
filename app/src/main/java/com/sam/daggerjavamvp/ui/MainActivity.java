@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.sam.daggerjavamvp.MyApplication;
 import com.sam.daggerjavamvp.R;
-import com.sam.daggerjavamvp.di.DaggerMainActivityComponent;
+import com.sam.daggerjavamvp.di.components.DaggerMainActivityComponent;
 import com.sam.daggerjavamvp.di.components.MainActivityComponent;
 import com.sam.daggerjavamvp.di.modules.MainActivityMvpModule;
 import com.sam.daggerjavamvp.model.Cat;
